@@ -5,8 +5,8 @@
   "targets": {
     "es7core-aeb70": {
       "hosting": {
-        "es7core-aeb70": [
-          "revenant"
+        "revenant": [
+          "es7core-aeb70"
         ]
       }
     }
