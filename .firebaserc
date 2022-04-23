@@ -1,5 +1,14 @@
 {
   "projects": {
-    "default": "es20-2e2b4"
+    "default": "es7core-aeb70"
+  },
+  "targets": {
+    "es7core-aeb70": {
+      "hosting": {
+        "es7core-aeb70": [
+          "revenant"
+        ]
+      }
+    }
   }
 }
