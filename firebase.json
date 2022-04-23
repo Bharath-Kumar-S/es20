@@ -12,6 +12,7 @@
     ]
   },
   "hosting": {
+    "target": "revenant",
     "public": "build",
     "ignore": [
       "firebase.json",
