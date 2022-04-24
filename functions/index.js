@@ -7,3 +7,25 @@ const functions = require("firebase-functions");
 //   functions.logger.info("Hello logs!", {structuredData: true});
 //   response.send("Hello from Firebase!");
 // });
+
+const express = require("express");
+const app = express();
+const cors = require("cors");
+
+app.use(express.json());
+app.use(cors({ origin: true }));
+
+app.get("/api/v1/users", (req, res) => {
+  res.send([
+    {
+        id: 1,
+        name: "John Doe"
+    },
+    {
+        id: 2,
+        name: "bhavik"
+    }
+  ]);
+})
+
+exports.expApi = functions.https.onRequest(app);
